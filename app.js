@@ -613,7 +613,9 @@ function renderLineChart(containerId, series, options = {}) {
       fill: "#98a2b3",
       "font-size": 11,
       "text-anchor": i === 0 ? "start" : i === labelCount - 1 ? "end" : "middle"
-    }, formatDate(new Date(`${dates[index]}T00:00:00Z`)));
+    
+    }, formatDate(new Date(`${dates[index]}T00:00:00Z`))));
+
   }
 
   if (options.zeroLine && minY < 0 && maxY > 0) {
